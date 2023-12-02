@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.25)
 project(AdventOfCodeCpp)
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(AdventOfCodeCpp src/day01/day01.cpp)
+add_executable(AdventOfCodeCpp src/day02/day02.cpp)
 
 include_directories(src/util)
 

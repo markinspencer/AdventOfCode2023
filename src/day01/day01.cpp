@@ -65,7 +65,7 @@ int part2(const lines& lines) {
                 digit = getValue(c);
             } else {
                 for (int j = 1; j <= words.size(); j++) {
-                    if (const auto& word = words[j - 1]; 0 == line.compare(i, word.size(), word)) {
+                    if (const auto& word = words[j - 1]; line.substr(i).starts_with(word))                          {
                         if (digit == 0) {
                             sum += 10 * j;
                         }
